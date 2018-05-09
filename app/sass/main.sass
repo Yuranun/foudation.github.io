@@ -1,0 +1,254 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+.nav-main
+	display: flex
+	justify-content: space-between
+
+.nav-main__logo-img
+	padding-top: 15px
+	padding-left: 10px
+	padding-bottom: 14px
+
+.nav-main__menu
+	display: flex
+
+.nav-main__toggle
+	display: flex
+	padding-top: 24px
+
+.nav-main__button
+	width: 19px
+	height: 2px
+	background-color: #3b5e76
+	position: relative
+	&:before, &:after
+		content: ''
+		display: block
+		position: absolute
+		height: 2px	
+		width: 19px
+		background-color: #3b5e76
+		left: 0
+		top: 6px
+	&:after
+		top: 12px	
+
+
+.nav-main__list
+	display: flex
+	padding: 0
+
+.nav-main__item
+	list-style-type: none
+	padding: 0 20px
+	
+.nav-main__link
+	text-decoration: none	
+	text-transform: uppercase
+	font-family: Intro Regular, sans-serif
+	font-size: 15px
+	color: $primary
+	&:hover
+		color: $hover
+
+.link__accent
+	color: $accent
+
+.nav-main__contact
+	margin: 10px
+
+.nav-main__mail
+	display: inline-block
+	width: 40px
+	height: 40px
+	border-radius: 20px
+	background-color: #77b71b
+	padding: 7px 13px 
+
+.nav-main__contact-large
+	margin-top: 25px
+	margin-right: 35px
+	margin-bottom: 25px
+
+.nav-main__mail-large	
+	border-radius: 35px
+	background-color: #77b71b
+	padding: 15px 
+	color: white
+	text-decoration: none
+	font-family: Intro Regular, sans-serif
+	font-size: 13px
+	span
+		padding-left: 10px
+
+.promo__title-block
+	margin-top: 90px
+	
+.promo__title
+  text-align: center
+  text-transform: uppercase
+  font-size: 32px
+  line-height: 1
+  font-weight: 400
+  color: #fff
+
+.promo__list
+	display: flex
+	flex-direction: column
+
+.promo__item
+	display: flex
+	flex-direction: column
+	height: 508px
+	background: url(../img/monolitic_foundation.jpg) no-repeat 
+	background-size: cover
+
+.band_bg	
+	background: url(../img/band_foundation.jpg) no-repeat
+	background-size: cover
+
+.base_bg
+	background: url(../img/basement_foundation.jpg) no-repeat
+	background-size: cover
+
+.promo__inner 
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+
+.promo__caption
+	font-family: Geometria Medium, sans-serif
+	font-size: 22px
+	font-weight: 500
+	color: $accent
+
+.promo__text
+	font-family: Geometria Regular, sans-serif
+	font-size: 14px
+	color: #fff
+	width: 248px
+	text-align: center
+
+.promo__btn
+	text-decoration: none
+	font-family: Intro Regular, sans-serif
+	font-size: 15px
+	color: #fff
+	border: 3px $accent solid
+	border-radius: 20px
+	padding: 7px 30px 7px 30px
+	img
+		padding-right: 10px
+
+.promo__mouse
+	margin-top: 25px
+
+.caption-slider
+	margin-top: 8rem
+
+.promo__text-slider
+	margin-top: 50px
+
+.promo__btn-slider
+	margin-top: 50px
+
+.swiper-button-prev
+	background-image: url(../img/slider-arrow_left.png)
+	background-size: 5px 8px
+
+.swiper-button-next	
+	background-image: url(../img/slider-arrow_right.png)
+	background-size: 5px 8px
+
+
+.visually-hidden
+  clip: rect(0 0 0 0)
+  overflow: hidden
+  width: 1px
+  height: 1px
+  border: 0
+  margin: -1px
+  padding: 0
+  position: absolute
+
+.large-promo__title
+  position: absolute
+  top: 175px
+  left: 50%
+  transform: translateX(-50%)
+  width: 815px
+  text-align: center
+  text-transform: uppercase
+  font-size: 5rem
+  line-height: 1
+  color: #fff
+  font-weight: 900
+  z-index: 1
+
+.large-promo__list
+	width: 100%
+	display: flex
+
+.large-promo__item
+	flex-flow: row nowrap
+	position: relative
+
+.large-promo__img
+  object-fit: cover
+  position: relative
+
+.large-promo__inner
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding-bottom: 20vh
+	z-index: 2
+
+.large-promo__details
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translateX(-50%)
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding-bottom: 6vh
+	z-index: 2	
+
+.large-promo__btn
+	border: 3px $accent solid
+	border-radius: 35px
+	padding: 10px 15px
+	img
+		padding-right: 10px
+	a	
+	color: #fff
+
+.large-promo__mouse
+	margin-top: 60px
+
+.large-promo__caption
+	font-family: Geometria Medium, sans-serif
+	font-size: 27px
+    font-weight: 500
+	color: #fff
+
+.large-promo__text
+	font-family: Geometria Regular, sans-serif
+	font-size: 16px
+	text-align: center
+	color: #fff
+	width: 350px
+
+
+@import "media" // Всегда в конце
